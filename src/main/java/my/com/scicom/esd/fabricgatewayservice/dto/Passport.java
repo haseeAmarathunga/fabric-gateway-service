@@ -2,21 +2,22 @@ package my.com.scicom.esd.fabricgatewayservice.dto;
 
 public class Passport
 {
-	private String passportId;
+	private String passportNo;
 	private String nationality;
 	private String name;
 	private String dob;
+	private String gender;
 	private String issueDate;
 	private String expiryDate;
 
-	public String getPassportId()
+	public String getPassportNo()
 	{
-		return passportId;
+		return passportNo;
 	}
 
-	public void setPassportId( String passportId )
+	public void setPassportNo( String passportNo )
 	{
-		this.passportId = passportId;
+		this.passportNo = passportNo;
 	}
 
 	public String getNationality()
@@ -67,5 +68,15 @@ public class Passport
 	public void setExpiryDate( String expiryDate )
 	{
 		this.expiryDate = expiryDate;
+	}
+
+	public String getGender()
+	{
+		return gender;
+	}
+
+	public void setGender( String gender )
+	{
+		this.gender = gender;
 	}
 }
